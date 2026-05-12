@@ -17,3 +17,16 @@ footer p:hover{
 .social-media-footer i:hover{
     color: #FC981A;
 }
+@media (max-width: 900px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-media-footer{
+        justify-content: center;
+    }
+    footer p{
+        font-size: 11px;
+    }
+}
+

@@ -73,6 +73,7 @@ form button:hover{
     form button{
         width:100%;
         max-width:250px;
+        margin: auto;
     }
 
 }
