@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.social-media-footer{
+    display: flex;
+    gap: 10px;
+}
+footer p{
+    font-size: 12px;
+}
+footer p:hover{
+    color: #FC981A;
+}
+.social-media-footer i:hover{
+    color: #FC981A;
+}

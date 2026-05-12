@@ -1,0 +1,49 @@
+#menu{
+background-color: #272527;
+text-align: center;
+scroll-margin-top: 80px;
+margin-bottom: 80px;
+
+}
+#menu h1{
+    padding: 30px;
+    position: relative;
+}
+#menu h1::after {
+  content: '';
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95px;       
+  height: 5px;
+  background-color:#FC981A;
+}
+#menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px  100px;
+}
+#menu-grid p{
+    font-size: 14px;
+}
+#menu-grid img{
+    height: 200px;
+    width: 200px;
+}
+@media screen and (max-width:900px) {
+    #menu-grid{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 30px;
+}
+#menu-grid img{
+    height: 100px;
+    width: 100px;
+}
+#menu-grid p{
+    font-size: 12px;
+
+}   
+}
