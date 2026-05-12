@@ -154,12 +154,25 @@ li a:hover {
     background-color: #FC981A;
     border-radius: 25px;
 }
+#overlay {
+    display: none;
+}
 
 @media screen and (max-width:900px) {
 
     .container {
         padding-left: 32px;
         padding-right: 32px;
+    }
+    #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 10;
     }
 
     #close {
@@ -194,6 +207,7 @@ li a:hover {
         gap: 10px;
         text-align: center;
         height: 100vh;
+        z-index: 20;
     }
 
     .links.active {
